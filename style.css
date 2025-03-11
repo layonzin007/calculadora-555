@@ -1,6 +1,10 @@
-/* Estilo do corpo */
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilo geral do corpo */
 body {
-    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Gradiente azul bonito */
+    background: url('https://source.unsplash.com/1920x1080/?technology,circuit') no-repeat center center fixed;
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
     color: white;
     padding: 20px;
     margin: 0;
@@ -9,47 +13,55 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 /* Estilo do título */
 h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para destacar */
 }
 
 /* Estilo dos inputs */
 input {
     width: 100%;
     max-width: 350px;
-    padding: 10px;
-    margin: 8px 0;
+    padding: 12px;
+    margin: 10px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
+    background: rgba(42, 42, 58, 0.8); /* Fundo escuro translúcido */
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo do botão */
 .botao {
-    background-color: #fcbe24;
-    color: white;
+    background: rgba(252, 190, 36, 0.9);
+    color: #1e1e2f;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Efeito hover no botão */
+/* Efeito ao passar o mouse no botão */
 .botao:hover {
-    background-color: #e0a800;
+    background: #e0a800;
+    transform: scale(1.05);
 }
 
-/* Estilos para celular */
+/* Estilos para telas menores (celulares) */
 @media (max-width: 600px) {
     body {
         padding: 15px;
@@ -60,6 +72,6 @@ input {
     }
 
     input {
-        max-width: 100%; /* Inputs ocupam toda a largura */
+        max-width: 100%;
     }
 }
