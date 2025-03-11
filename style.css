@@ -12,3 +12,37 @@ body {
     background-color: #fcbe24;
     color:white;
     font-size: 24px;
+    body {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* No PC, não passa de 400px */
+    padding: 8px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    body {
+        background-color: lightgray;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        max-width: 100%; /* No celular, ocupa toda a tela */
+    }
+}
