@@ -3,7 +3,7 @@
 
 /* Estilo geral do corpo */
 body {
-    background: url('https://source.unsplash.com/1920x1080/?technology,circuit') no-repeat center center fixed;
+    background: url('https://wallpaperaccess.com/full/317501.jpg') no-repeat center center fixed, #1e1e2f;
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     color: white;
     padding: 20px;
